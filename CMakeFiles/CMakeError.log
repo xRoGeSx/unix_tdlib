@@ -1,0 +1,143 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/xrogesx/td/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_32d6a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_32d6a.dir/build.make CMakeFiles/cmTC_32d6a.dir/build
+make[1]: Entering directory '/home/xrogesx/td/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_32d6a.dir/CheckSymbolExists.c.o
+/usr/bin/clang-6.0   -fPIE   -o CMakeFiles/cmTC_32d6a.dir/CheckSymbolExists.c.o   -c /home/xrogesx/td/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_32d6a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32d6a.dir/link.txt --verbose=1
+/usr/bin/clang-6.0      -rdynamic CMakeFiles/cmTC_32d6a.dir/CheckSymbolExists.c.o  -o cmTC_32d6a 
+CMakeFiles/cmTC_32d6a.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x7): undefined reference to `pthread_create'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+CMakeFiles/cmTC_32d6a.dir/build.make:97: recipe for target 'cmTC_32d6a' failed
+make[1]: *** [cmTC_32d6a] Error 1
+make[1]: Leaving directory '/home/xrogesx/td/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_32d6a/fast' failed
+make: *** [cmTC_32d6a/fast] Error 2
+
+File /home/xrogesx/td/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WIMPLICIT_FALLTHROUGH_2 failed with the following output:
+Change Dir: /home/xrogesx/td/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d8e8e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d8e8e.dir/build.make CMakeFiles/cmTC_d8e8e.dir/build
+make[1]: Entering directory '/home/xrogesx/td/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d8e8e.dir/src.cxx.o
+/usr/bin/clang++-6.0    -stdlib=libc++ -pthread -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -DHAVE_CXX_FLAG_WIMPLICIT_FALLTHROUGH_2 -Wimplicit-fallthrough=2 -fPIE   -Wimplicit-fallthrough=2 -o CMakeFiles/cmTC_d8e8e.dir/src.cxx.o -c /home/xrogesx/td/build/CMakeFiles/CMakeTmp/src.cxx
+warning: unknown warning option '-Wimplicit-fallthrough=2'; did you mean '-Wimplicit-fallthrough'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wimplicit-fallthrough=2'; did you mean '-Wimplicit-fallthrough'? [-Wunknown-warning-option]
+2 warnings generated.
+Linking CXX executable cmTC_d8e8e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8e8e.dir/link.txt --verbose=1
+/usr/bin/clang++-6.0  -stdlib=libc++ -pthread -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -DHAVE_CXX_FLAG_WIMPLICIT_FALLTHROUGH_2 -Wimplicit-fallthrough=2    -rdynamic CMakeFiles/cmTC_d8e8e.dir/src.cxx.o  -o cmTC_d8e8e 
+make[1]: Leaving directory '/home/xrogesx/td/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WDUPLICATED_BRANCHES failed with the following output:
+Change Dir: /home/xrogesx/td/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4b163/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4b163.dir/build.make CMakeFiles/cmTC_4b163.dir/build
+make[1]: Entering directory '/home/xrogesx/td/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4b163.dir/src.cxx.o
+/usr/bin/clang++-6.0    -stdlib=libc++ -pthread -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -DHAVE_CXX_FLAG_WDUPLICATED_BRANCHES -Wduplicated-branches -fPIE   -Wduplicated-branches -o CMakeFiles/cmTC_4b163.dir/src.cxx.o -c /home/xrogesx/td/build/CMakeFiles/CMakeTmp/src.cxx
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+2 warnings generated.
+Linking CXX executable cmTC_4b163
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b163.dir/link.txt --verbose=1
+/usr/bin/clang++-6.0  -stdlib=libc++ -pthread -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -DHAVE_CXX_FLAG_WDUPLICATED_BRANCHES -Wduplicated-branches    -rdynamic CMakeFiles/cmTC_4b163.dir/src.cxx.o  -o cmTC_4b163 
+make[1]: Leaving directory '/home/xrogesx/td/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WDUPLICATED_COND failed with the following output:
+Change Dir: /home/xrogesx/td/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ba885/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ba885.dir/build.make CMakeFiles/cmTC_ba885.dir/build
+make[1]: Entering directory '/home/xrogesx/td/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ba885.dir/src.cxx.o
+/usr/bin/clang++-6.0    -stdlib=libc++ -pthread -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -DHAVE_CXX_FLAG_WDUPLICATED_COND -Wduplicated-cond -fPIE   -Wduplicated-cond -o CMakeFiles/cmTC_ba885.dir/src.cxx.o -c /home/xrogesx/td/build/CMakeFiles/CMakeTmp/src.cxx
+warning: unknown warning option '-Wduplicated-cond'; did you mean '-Wduplicate-enum'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond'; did you mean '-Wduplicate-enum'? [-Wunknown-warning-option]
+2 warnings generated.
+Linking CXX executable cmTC_ba885
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba885.dir/link.txt --verbose=1
+/usr/bin/clang++-6.0  -stdlib=libc++ -pthread -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -DHAVE_CXX_FLAG_WDUPLICATED_COND -Wduplicated-cond    -rdynamic CMakeFiles/cmTC_ba885.dir/src.cxx.o  -o cmTC_ba885 
+make[1]: Leaving directory '/home/xrogesx/td/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WALLOC_ZERO failed with the following output:
+Change Dir: /home/xrogesx/td/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d02f0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d02f0.dir/build.make CMakeFiles/cmTC_d02f0.dir/build
+make[1]: Entering directory '/home/xrogesx/td/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d02f0.dir/src.cxx.o
+/usr/bin/clang++-6.0    -stdlib=libc++ -pthread -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -DHAVE_CXX_FLAG_WALLOC_ZERO -Walloc-zero -fPIE   -Walloc-zero -o CMakeFiles/cmTC_d02f0.dir/src.cxx.o -c /home/xrogesx/td/build/CMakeFiles/CMakeTmp/src.cxx
+warning: unknown warning option '-Walloc-zero'; did you mean '-Wdiv-by-zero'? [-Wunknown-warning-option]
+warning: unknown warning option '-Walloc-zero'; did you mean '-Wdiv-by-zero'? [-Wunknown-warning-option]
+2 warnings generated.
+Linking CXX executable cmTC_d02f0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d02f0.dir/link.txt --verbose=1
+/usr/bin/clang++-6.0  -stdlib=libc++ -pthread -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -DHAVE_CXX_FLAG_WALLOC_ZERO -Walloc-zero    -rdynamic CMakeFiles/cmTC_d02f0.dir/src.cxx.o  -o cmTC_d02f0 
+make[1]: Leaving directory '/home/xrogesx/td/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WLOGICAL_OP failed with the following output:
+Change Dir: /home/xrogesx/td/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1519c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1519c.dir/build.make CMakeFiles/cmTC_1519c.dir/build
+make[1]: Entering directory '/home/xrogesx/td/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1519c.dir/src.cxx.o
+/usr/bin/clang++-6.0    -stdlib=libc++ -pthread -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -DHAVE_CXX_FLAG_WLOGICAL_OP -Wlogical-op -fPIE   -Wlogical-op -o CMakeFiles/cmTC_1519c.dir/src.cxx.o -c /home/xrogesx/td/build/CMakeFiles/CMakeTmp/src.cxx
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+2 warnings generated.
+Linking CXX executable cmTC_1519c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1519c.dir/link.txt --verbose=1
+/usr/bin/clang++-6.0  -stdlib=libc++ -pthread -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -DHAVE_CXX_FLAG_WLOGICAL_OP -Wlogical-op    -rdynamic CMakeFiles/cmTC_1519c.dir/src.cxx.o  -o cmTC_1519c 
+make[1]: Leaving directory '/home/xrogesx/td/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_FLTO_ODR_TYPE_MERGING failed with the following output:
+Change Dir: /home/xrogesx/td/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_813a9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_813a9.dir/build.make CMakeFiles/cmTC_813a9.dir/build
+make[1]: Entering directory '/home/xrogesx/td/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_813a9.dir/src.cxx.o
+/usr/bin/clang++-6.0    -stdlib=libc++ -pthread -std=c++14 -fno-omit-frame-pointer -fno-exceptions -fno-rtti -ffunction-sections -fdata-sections -Wall -Wextra -Wpointer-arith -Wcast-qual -Wsign-compare -Wno-tautological-compare -Wpointer-arith -Wvla -Wnon-virtual-dtor -Wno-unused-parameter -Wconversion -Wno-sign-conversion -Wc++14-compat-pedantic -Wdeprecated -Qunused-arguments -Wodr -DHAVE_CXX_FLAG_FLTO_ODR_TYPE_MERGING -flto-odr-type-merging -fPIE   -flto-odr-type-merging -o CMakeFiles/cmTC_813a9.dir/src.cxx.o -c /home/xrogesx/td/build/CMakeFiles/CMakeTmp/src.cxx
+clang: error: unknown argument: '-flto-odr-type-merging'
+clang: error: unknown argument: '-flto-odr-type-merging'
+CMakeFiles/cmTC_813a9.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_813a9.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_813a9.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/xrogesx/td/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_813a9/fast' failed
+make: *** [cmTC_813a9/fast] Error 2
+
+Source file was:
+int main() { return 0; }

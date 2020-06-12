@@ -1,0 +1,2 @@
+/usr/bin/llvm-ar-6.0 qc libtdactor.a  CMakeFiles/tdactor.dir/td/actor/impl/ConcurrentScheduler.cpp.o CMakeFiles/tdactor.dir/td/actor/impl/Scheduler.cpp.o CMakeFiles/tdactor.dir/td/actor/MultiPromise.cpp.o CMakeFiles/tdactor.dir/td/actor/Timeout.cpp.o
+/usr/bin/llvm-ranlib-6.0 libtdactor.a
